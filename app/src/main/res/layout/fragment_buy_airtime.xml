@@ -1,0 +1,119 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="patrickcom.patto.fiona.Fragment.BuyAirtime">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Select Account"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/black"/>
+
+
+        <RadioGroup
+            android:id="@+id/selectAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioMyNumber"
+                android:layout_width="0dp"
+                android:checked="true"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="My Number"/>
+            <RadioButton
+                android:id="@+id/radioOtherNumber"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Another Number"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/linearMyNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/buyMyAmount"
+                android:background="@drawable/border"
+                android:hint="Enter Amount"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:maxLength="5"
+                android:inputType="number"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/buyMyButton"
+                android:background="@drawable/angle2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearOtherNumber"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/buyOtherPhone"
+            android:background="@drawable/border"
+            android:hint="07... Enter Phone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLength="9"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/buyOtherAmount"
+            android:background="@drawable/border"
+            android:hint="Enter Amount"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:maxLength="5"
+            android:inputType="number"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/buyOtherButton"
+            android:background="@drawable/angle2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

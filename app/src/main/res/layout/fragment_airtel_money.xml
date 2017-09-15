@@ -1,0 +1,194 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="patrickcom.patto.fiona.Fragment.AirtelMoney">
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Balance"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="@dimen/nav_header_vertical_spacing" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/sendMoney"
+            android:layout_width="0dp"
+            android:background="@android:color/background_light"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_imv_booktickets"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/background_light"
+                android:src="@drawable/send" />
+
+            <TextView
+                android:id="@+id/main_txv_booktickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_imv_booktickets"
+                android:layout_centerHorizontal="true"
+                android:text="Send Money"
+                android:textAlignment="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeWithdraw"
+            android:background="@android:color/background_light"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_imv_viewtickets"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/background_light"
+                android:src="@drawable/withdraw" />
+
+            <TextView
+                android:id="@+id/main_txv_viewtickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_imv_viewtickets"
+                android:layout_centerHorizontal="true"
+                android:text="Withdraw"
+                android:textAlignment="center" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeBuyAitime"
+            android:layout_width="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_imv_viewroute"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/background_light"
+                android:src="@drawable/buyairtime" />
+
+            <TextView
+                android:id="@+id/main_txv_viewroute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_imv_viewroute"
+                android:layout_centerHorizontal="true"
+                android:text="Buy Airtime"
+                android:textAlignment="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/relativeMyaccount"
+            android:layout_width="0dp"
+            android:background="@android:color/background_light"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_imv_contactus"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/background_light"
+                android:src="@drawable/myaccount" />
+
+            <TextView
+                android:id="@+id/myAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_imv_contactus"
+                android:layout_centerHorizontal="true"
+                android:text="My Account"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Airtel Money Satements"
+            android:gravity="center"
+            android:fontFamily="serif-monospace"
+            android:textAppearance="@android:style/TextAppearance"
+            android:textColor="@color/colorPrimary"
+            />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/miniStatement"
+        android:background="@drawable/text_view"
+        android:editable="false"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="Mini Statement"
+        android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/fullStatement"
+            android:editable="false"
+            android:background="@drawable/text_view"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Full Statement"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

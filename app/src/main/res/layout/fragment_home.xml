@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:orientation="vertical"
+    tools:context="patrickcom.patto.fiona.Fragment.Home">
+    <!--<ImageView-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/buyairtime"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp" />-->
+    <TextView
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"/>
+    <TextView
+        android:id="@+id/loggedUser"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:text="Fiona Mutuku Kimathi"/>
+<LinearLayout
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginTop="200dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/airtelMoney"
+        android:textSize="15dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:pointerIcon="arrow"
+        android:textAlignment="textEnd"
+        android:text="Airtel Money"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="5dp" />
+
+    <Button
+        android:id="@+id/myProfile"
+        android:paddingTop="10dp"
+        android:textSize="15dp"
+        android:textAlignment="textEnd"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="My Profile"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <Button
+        android:id="@+id/tellfriend"
+        android:paddingTop="10dp"
+        android:textSize="15dp"
+        android:textAlignment="textEnd"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Tell a Friend"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:paddingTop="10dp"
+        android:textSize="15dp"
+        android:textAlignment="textEnd"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Logout"/>
+
+</LinearLayout>
+
+
+</LinearLayout>
