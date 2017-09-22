@@ -42,6 +42,7 @@ public class MiniStatementAdapter extends RecyclerView.Adapter<MiniStatementAdap
 
         Statement getFareAdapter1 = statement.get(position);
 
+        holder.no.setText(getFareAdapter1.getId());
         holder.code.setText(getFareAdapter1.getCode());
         holder.amount.setText(getFareAdapter1.getAmount());
         holder.date.setText(getFareAdapter1.getDate());
@@ -76,7 +77,7 @@ public class MiniStatementAdapter extends RecyclerView.Adapter<MiniStatementAdap
 
     class ViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView code,amount,type,date;
+        public TextView code,amount,type,date,no;
 
 
 
@@ -88,6 +89,7 @@ public class MiniStatementAdapter extends RecyclerView.Adapter<MiniStatementAdap
             amount = (TextView) itemView.findViewById(R.id.statementAmount);
             type = (TextView) itemView.findViewById(R.id.statementType);
             date = (TextView) itemView.findViewById(R.id.stamentDate);
+            no = (TextView) itemView.findViewById(R.id.inc);
 
 
 

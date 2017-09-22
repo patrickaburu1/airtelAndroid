@@ -118,9 +118,11 @@ public class MiniStatement extends Fragment {
 
             JSONObject json = null;
             try {
+                String no=String.valueOf(i+1);
                 json = array.getJSONObject(i);
 
                 GetDataAdapter2.setAmount(json.getString("amount"));
+                GetDataAdapter2.setId(no);
                 GetDataAdapter2.setCode(json.getString("code"));
                 GetDataAdapter2.setDate(json.getString("created_at"));
                 GetDataAdapter2.setType(json.getInt("type"));
