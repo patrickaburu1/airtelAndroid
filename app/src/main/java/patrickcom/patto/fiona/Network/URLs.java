@@ -6,6 +6,7 @@ package patrickcom.patto.fiona.Network;
 
 public class URLs {
     //BASE URL
+   //public static final String BASE_URL = "http://192.168.43.228/fiona/public/api/";
    public static final String BASE_URL = "http://192.168.43.124/fiona/public/api/";
 
     public static final String LOGIN=BASE_URL+"login";
@@ -19,4 +20,9 @@ public class URLs {
 
     //buy airtime to other number
     public static final String BUY_OTHER=BASE_URL+"buyAirtimeOther";
+
+    //check balance
+    public static final String CHECK_BALANCE=BASE_URL+"myAccount";
+    //ministetement
+    public static final String MINISTATEMENT=BASE_URL+"miniStatement";
 }
